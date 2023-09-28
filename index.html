@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <head>
+        <title>Modul 5-1</title>
+        <style>
+            body{
+                width: 800px;
+            }
+            .main{
+                display: grid;
+                grid-template-columns: 200px 200px 200px 200px;
+            }
+            .grid1 .row1{
+                background: red;
+                border-radius: 20px;
+                height: 90px;
+                display: flex;
 
-<h1>My First Heading</h1>
+            }
+            .grid1 .row1 h1{
+                color: white;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            .grid2 .row1, .grid3 .row1, .grid4 .row1{
+                height: 90px;
+            }
+            .grid2 .row1 p, .grid3 .row1 p, .grid4 .row1 p{
+                padding-top: 10px;
+                text-align: right;
+                color: red;
+                font-size: 1.3 em;
+            }
+            .grid1 .row2, .grid1 .row3{
+                padding-top: 25px;
+                height: 200px;
+            }
+            .grid1 .row2 p, .grid1 .row3 p{
+                color: grey;
+            }
+            .column1, .column2{
+                width: 600px;
+            }
+            .column1 h1, .column2 h1{
+                color: red;
+            }
+            .column1 p, .column2 p{
+                text-align: justify;
+            }
+            .column1 a, .column2 a{
+                background: red;
+                color: white;
+            }
+            .footer {
+                background: grey;
+                clear: both;
+                width: 800px;
+                height: 40px;
+            }
+            .footer p{
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
 
-<p>My first paragraph.</p>
-
-</body>
+    <body>
+        <div class="main">
+            <div class="grid1">
+                <div class="row1">
+                    <h1><i>Photography blog</i></h1>
+                </div>
+                <div class="row2">
+                    <p>5.21.2010</p>
+                    <p>articles</p>
+                </div>
+                <div class="row3">
+                    <p>5.17.2010</p>
+                    <p>inspiration</p>
+                </div>
+            </div>
+            <div class="grid2">
+                <div class="row1">
+                    <p><strong>HOME</strong></p>
+                </div>
+                <div class="row2">
+                    <div class="column1">
+                        <h1><i>10 Fantastic Photography Tips</i></h1>
+                        <p>
+                            We've put together our favourite photo tips and tricks to help you become a better photographer. Forget
+                            about relying on lady luck, or wasting your precious time wading through and deleting disappointing
+                            pictures, we'll help you get it right first time. Making it easier to print your favourite photos and share the
+                            highlights of your life online. Sp whether you're going to be out & about photographing weddings, your kids and pets, enjoying family days out or you latest holiday, follow our advice for fantastic photos to be proud of.
+                        </p>
+                        <a>Read the article</a>
+                    </div>
+                    <div class="column2">
+                        <h1><i>Top 10 Tips for New Bloggers</i></h1>
+                        <p>
+                            We've put together our favourite photo tips and tricks to help you become a better photographer. Forget
+                            about relying on lady luck, or wasting your precious time wading through and deleting disappointing
+                            pictures, we'll help you get it right first time. Making it easier to print your favourite photos and share the
+                            highlights of your life online. Sp whether you're going to be out & about photographing weddings, your kids and pets, enjoying family days out or you latest holiday, follow our advice for fantastic photos to be proud of.
+                        </p>
+                        <a>Read the article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid3">
+                <div class="row1">
+                    <p><strong>ABOUT</strong></p>
+                </div>
+                
+            </div>
+            <div class="grid4">
+                <div class="row1">
+                    <p><strong>CONTACT</strong></p>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <p>&copy; Copyright 2013 Desain Web</p>
+            </div>
+        </div>
+    </body>
 </html>
